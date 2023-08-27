@@ -1,0 +1,30 @@
+{
+  "extends": ["react-app", "react-app/jest"],
+  "rules": {
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": "return" },
+      { "blankLine": "always", "prev": "if", "next": "*" },
+      { "blankLine": "always", "prev": "*", "next": "if" }
+    ],
+
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+
+    "react/prop-types": "off",
+    "react/display-name": "off",
+    "react/self-closing-comp": "error",
+
+    "import/no-useless-path-segments": ["error", { "noUselessIndex": true }],
+    "import/no-relative-parent-imports": "off",
+    "import/order": [
+      "error",
+      {
+        "alphabetize": { "order": "asc", "caseInsensitive": true },
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+        "newlines-between": "always",
+        "pathGroups": [{ "pattern": "~/**", "group": "internal" }]
+      }
+    ]
+  }
+}

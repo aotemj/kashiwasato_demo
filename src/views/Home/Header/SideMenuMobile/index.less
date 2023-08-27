@@ -1,0 +1,79 @@
+.side-menu {
+  margin-left: 25px;
+  margin-bottom: 40px;
+  ul {
+    li {
+      margin-bottom: 30px;
+      font-size: 16px;
+      a {
+        position: relative;
+        display: block;
+        color: #999;
+      }
+      &.current {
+        a {
+          color: #000;
+        }
+      }
+    }
+  }
+  .lang-switch {
+    font-size: 16px;
+    color: #999;
+    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 80px 0 0 0;
+    width: 110px;
+  }
+  #search_sp {
+    font-size: 12px;
+    margin: 80px 0 0;
+    //display: none;
+    position: relative;
+    .input {
+      display: inline-block;
+      width: 215px;
+      border: 1px solid #ccc;
+      position: relative;
+      input {
+        height: 21px;
+        margin: 0;
+        box-sizing: content-box;
+        border: 0;
+        width: 165px;
+        letter-spacing: 0.05em;
+        padding: 5px 10px;
+        border-radius: 0;
+        font-size: 12px;
+      }
+    }
+    .close {
+      display: inline-block;
+      box-sizing: border-box;
+      width: 30px;
+      height: 30px;
+      background-image: url(https://kashiwasato.com/new_assets_v3/images/close_15.svg);
+      background-size: 12px 12px;
+      background-position: 8px 8px;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 181px;
+      top: 2px;
+    }
+    .button {
+      color: #fff;
+      text-transform: uppercase;
+      display: inline-block;
+      line-height: 33px;
+      padding: 0 15px;
+      letter-spacing: 0.05em;
+      background-color: #ccc;
+    }
+  }
+}

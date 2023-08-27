@@ -1,0 +1,247 @@
+.header-container {
+  @media screen and (min-width: 768px) {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 10px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    .left {
+      display: inline;
+      float: left;
+      box-sizing: border-box;
+      border-left: 0px solid #000;
+      height: 10px;
+      line-height: 1em;
+      border-left-width: 0px;
+      -webkit-transition: border-left-width 0.15s;
+      transition: border-left-width 0.15s;
+      &.border-effect {
+        border-left-width: 34px;
+      }
+      a {
+        position: absolute;
+        display: block;
+        left: 80px;
+        width: 430px;
+        margin-top: -1px;
+        white-space: nowrap;
+        overflow: hidden;
+        color: #000;
+        text-decoration: none;
+        &:link,
+        &:visited {
+          color: #000;
+        }
+        .name {
+          font-family: "Helvetica Neue LT W05_55 Roman", Helvetica, Arial, Verdana, "Noto Sans Japanese", "Noto Sans SC",
+            "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック",
+            "MS PGothic", sans-serif;
+        }
+
+        .title {
+          margin-left: 20px;
+          color: #999;
+        }
+      }
+    }
+    .right {
+      display: inline;
+      float: right;
+      position: relative;
+      margin-right: 80px;
+      margin-top: -1px;
+      right: -10px;
+      .side-menu {
+        margin-right: 60px;
+        ul {
+          display: inline-block;
+          li {
+            display: inline;
+            float: left;
+            a {
+              position: relative;
+              display: inline-block;
+              color: #999;
+              margin-right: 8px;
+              overflow: hidden;
+              white-space: nowrap;
+            }
+            &.current {
+              a {
+                color: #000;
+              }
+            }
+            &.project {
+              a {
+                width: 63px;
+              }
+            }
+            &.profile {
+              a {
+                width: 58px;
+              }
+            }
+            &.contact {
+              a {
+                width: 65px;
+              }
+            }
+            &.en,
+            &.cn {
+              a {
+                width: 59px;
+              }
+            }
+            &.ja {
+              a {
+                width: 69px;
+              }
+            }
+            &:last-child {
+              margin-right: 37px;
+            }
+          }
+          .split {
+            display: inline;
+            float: left;
+          }
+        }
+        .lang-switch {
+          display: inline-block;
+          ul {
+            li {
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+      #search {
+        display: inline;
+        float: left;
+        margin-top: -10px;
+        width: 300px;
+        position: absolute;
+        right: 0;
+        z-index: 0;
+
+        input {
+          display: inline;
+          float: right;
+          appearance: none;
+          box-sizing: border-box;
+          width: 0%;
+          height: 30px;
+          padding: 10px;
+          padding-right: 30px;
+          border: 1px solid #ccc;
+          opacity: 0;
+          letter-spacing: 0.05em;
+          outline: none;
+          transition: all 0.3s;
+        }
+        .button {
+          display: inline;
+          position: absolute;
+          right: 0;
+          top: 2px;
+          box-sizing: border-box;
+          width: 30px;
+          height: 30px;
+          background-image: url(https://kashiwasato.com/new_assets_v3/images/search.svg);
+          background-size: 12px 12px;
+          background-position: 8px 8px;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    .side-menu {
+      display: block;
+      width: auto;
+    }
+    .split {
+      margin-right: 9px;
+      width: 1px;
+      background-color: #999;
+      height: 12px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    position: relative;
+    width: 100%;
+    height: 28px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    .left {
+      border-left: 0px solid #000;
+      height: 28px;
+      display: block;
+      width: 11px;
+      border-left-width: 11px;
+      -webkit-transition: border-left-width 0.15s;
+      transition: border-left-width 0.15s;
+      &.border-effect {
+        border-left-width: 11px;
+      }
+      a {
+        position: absolute;
+        left: 25px;
+        padding: 10px;
+        margin-top: -11px;
+        margin-left: -11px;
+        line-height: 18px;
+        .name {
+          font-family: "HelveticaNeueW01-65Medi", Helvetica, Arial, Verdana, "Noto Sans Japanese", "Noto Sans SC",
+            "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック",
+            "MS PGothic", sans-serif;
+          font-size: 18px;
+        }
+        .title {
+          display: block;
+          font-size: 10px;
+          -webkit-transform: scale(0.8, 0.8);
+          transform: scale(0.8, 0.8);
+          -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+          color: #575757;
+        }
+      }
+    }
+    .right {
+      position: absolute;
+      top: 2px;
+      right: 25px;
+      .menu-button {
+        display: block;
+        width: 27px;
+        height: 25px;
+        margin-top: 0px;
+        margin-right: 2px;
+        .open-menu {
+          height: 25px;
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          background-size: 27px 50px;
+          background-image: url(https://kashiwasato.com/new_assets_v3/images/menu_button_mobile.svg);
+        }
+      }
+    }
+  }
+}
+
+.side-menu {
+  display: inline;
+  float: left;
+  position: relative;
+  z-index: 10;
+  margin-left: 80px;
+  margin-bottom: 50px;
+  ul {
+    li {
+      margin-bottom: 15px;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.content_thumb {
+  @media screen and (max-width: 767px) {
+    .project-group {
+      .project,
+      .category {
+        display: inline-block;
+        min-height: 1%;
+        display: block;
+        width: 100%;
+        margin-bottom: 14px;
+        line-height: 1.3em;
+        white-space: nowrap;
+        overflow: hidden;
+        .project-name,
+        .category-name {
+          margin: 24px 25px 17px 25px;
+          font-size: 18px;
+          font-family: "Helvetica Neue LT W05_55 Roman", Helvetica, Arial, Verdana, "Noto Sans Japanese", "Noto Sans SC",
+            "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック",
+            "MS PGothic", sans-serif;
+          letter-spacing: 0.05em;
+          display: block;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          //overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .project-desc {
+          margin: 0 26px;
+          display: inline-block;
+          font-size: 12px;
+          line-height: 1.6em;
+          width: -webkit-calc(100% - 50px);
+          width: calc(100% - 50px);
+          height: 55px;
+          white-space: initial !important;
+          overflow: hidden;
+          color: #000;
+          font-family: "HelveticaNeueW01-45Ligh", Helvetica, Arial, Verdana, "Noto Sans Japanese", "Noto Sans SC",
+            "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック",
+            "MS PGothic", sans-serif;
+          letter-spacing: 0.05em;
+          margin-bottom: 6px;
+          position: relative;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .project-group {
+      .project,
+      .category {
+        .img {
+          background-color: #f6f6f6;
+          .project-thums {
+            filter: brightness(0.98);
+          }
+        }
+        .text {
+          min-height: 64px;
+          .project-name,
+          .category-name {
+            display: block;
+            padding: 23px 0 14px;
+            line-height: 1.6em;
+            font-size: 15px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            height: 61px;
+            box-sizing: border-box;
+          }
+          .category-desc,
+          .project-desc {
+            display: inline-block;
+            font-size: 12px;
+            line-height: 1.7em;
+            height: 110px;
+            white-space: initial !important;
+            overflow: hidden;
+            color: #000;
+            font-family: "HelveticaNeueW01-45Ligh", Helvetica, Arial, Verdana, "Noto Sans Japanese", "Noto Sans SC",
+              "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック",
+              "MS PGothic", sans-serif;
+            letter-spacing: 0.05em;
+            position: relative;
+            p {
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 1;
+              margin-bottom: 0;
+              line-height: 1.6em;
+              overflow: hidden;
+              &.more {
+                color: #000;
+                opacity: 0.8;
+                position: absolute;
+                bottom: 0;
+                letter-spacing: 0.1em;
+                .plus {
+                  position: relative;
+                  top: -1px;
+                }
+              }
+            }
+          }
+        }
+        position: relative;
+        display: block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 250px;
+        margin-bottom: 23px;
+      }
+    }
+  }
+}
+
+a.project {
+  display: inline;
+  float: left;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
