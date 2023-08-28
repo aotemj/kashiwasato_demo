@@ -44,6 +44,8 @@ export const ResizeProvider: React.FC<ResizeProviderTypes> = ({ children }) => {
         countInEachRow = 3
       } else if (clientWidth < 1800) {
         countInEachRow = 4
+      } else {
+        countInEachRow = 5
       }
 
       itemWidth = Math.floor((clientWidth - marginLeft - marginRight * countInEachRow) / countInEachRow)
