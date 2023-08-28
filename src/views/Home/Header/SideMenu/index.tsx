@@ -2,6 +2,7 @@ import { ChangeEventHandler, useContext, useState } from "react"
 
 import TextShuffleFragment from "../../../../components/TextShuffleFragment"
 import { ResizeContext } from "../../../ResizeProvider"
+import { SearchKeyWordContext } from "../../../SearchKeyWordProvider"
 import { languages, subpages } from "../constant"
 
 const SideMenu = () => {
@@ -17,6 +18,7 @@ const SideMenu = () => {
     setSearchZIndex(0)
   }
   const { isMobile } = useContext(ResizeContext)
+  const { handleChangeKeyWord } = useContext(SearchKeyWordContext)
   // 切换换菜单项
   const handleSubpageClick = (value: string) => {
     setActivePage(value)
@@ -75,6 +77,7 @@ const SideMenu = () => {
         <input
           type="text"
           placeholder="PLEASE INPUT KEYWORD"
+          onChange={handleChangeKeyWord}
           style={{
             width: searchZIndex ? "100%" : "0%",
             opacity: searchZIndex ? 1 : 0,
