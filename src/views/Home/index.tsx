@@ -3,7 +3,7 @@ import { SearchKeyWordProvider } from "../SearchKeyWordProvider"
 
 import Footer from "./Footer"
 import Header from "./Header"
-import SideMenuMobile from "./Header/SideMenuMobile"
+// import SideMenuMobile from "./Header/SideMenuMobile"
 import PageData from "./PageData"
 
 import "./index.less"

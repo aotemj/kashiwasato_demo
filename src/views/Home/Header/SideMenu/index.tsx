@@ -1,7 +1,6 @@
-import { ChangeEventHandler, useContext, useState } from "react"
+import { useContext, useState } from "react"
 
 import TextShuffleFragment from "../../../../components/TextShuffleFragment"
-import { ResizeContext } from "../../../ResizeProvider"
 import { SearchKeyWordContext } from "../../../SearchKeyWordProvider"
 import { languages, subpages } from "../constant"
 
@@ -17,7 +16,6 @@ const SideMenu = () => {
   const handleSearchLeave = () => {
     setSearchZIndex(0)
   }
-  const { isMobile } = useContext(ResizeContext)
   const { handleChangeKeyWord } = useContext(SearchKeyWordContext)
   // 切换换菜单项
   const handleSubpageClick = (value: string) => {

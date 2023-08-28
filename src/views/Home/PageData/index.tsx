@@ -3,11 +3,11 @@ import { useContext, useMemo, useState } from "react"
 
 import { getProjects } from "../../../api/projects"
 import { ResizeContext } from "../../ResizeProvider"
+import { SearchKeyWordContext } from "../../SearchKeyWordProvider"
 
 import ProjectItem from "./ProjectItem"
 
 import "./index.less"
-import { SearchKeyWordContext } from "../../SearchKeyWordProvider"
 
 /**
  * PageData 项目列表
